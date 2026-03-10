@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            background: rgba(0, 0, 0, 0.35);
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border-radius: 6px;
+            border: none;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .submit-btn {
+            background: #ff9800;
+            color: #fff;
+            font-size: 18px;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .submit-btn:hover {
+            background: #e68900;
+        }
+
+        .whatsapp-btn {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background: #25D366;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1ebe5b;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Book a Session</h1>
+    <p>Fill in the form or book instantly via WhatsApp</p>
+
+    <!-- Booking Form -->
+    <form action="mailto:samuelwafula010@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <input type="date" name="Preferred Date" required>
+        <textarea name="Message" placeholder="Your Message"></textarea>
+
+        <button class="submit-btn" type="submit">Submit Booking</button>
+    </form>
+
+    <!-- WhatsApp Button -->
+    <a class="whatsapp-btn"
+       href="https://wa.me/254700000000?text=Hello%20Samuel,%20I%20would%20like%20to%20make%20a%20booking."
+       target="_blank">
+        Book via WhatsApp
+    </a>
+
+    <footer>
+        © 2026 | Booking Page
+    </footer>
+</div>
+
+</body>
+</html>
