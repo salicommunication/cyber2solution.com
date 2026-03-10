@@ -1,2 +1,2 @@
-# cyber2solution.com
+# cybersolution.com
 website description
